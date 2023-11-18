@@ -9,10 +9,8 @@ namespace RestaurantV2.Contract.Interfaces
         MealResponse GetMealResponse(int id);
         string GetCategoryName(int id);
         MealResponse AddMeal(MealRequest request);
-        MealResponse ConvertToResponse(Meal meal);
-        Meal Convert(MealRequest mealRequest);
         MealResponse EditMeal(MealRequestPut request,int id);
         IEnumerable<MealResponse> DeleteMeal(int id);
-
+        
     }
 }

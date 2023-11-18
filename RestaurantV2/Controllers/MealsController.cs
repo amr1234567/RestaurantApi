@@ -23,7 +23,6 @@ namespace RestaurantV2.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<MealResponse>>> GetMeals()
         {
-            
             var mealsResponse = mealServises.GetMealResponses();
             return Ok(mealsResponse);
         }
